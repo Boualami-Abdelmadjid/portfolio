@@ -1,0 +1,22 @@
+header {
+  opacity: 0.8;
+  height: 4rem;
+  position: absolute;
+  z-index: 5;
+  color: #c770f0;
+  margin: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+header::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #c770f0;
+  transition: width 0.3s ease-in-out;
+}
+header:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.typing {
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 3rem;
+  color: #fefefe;
+  width: 30rem;
+  padding-top: 20rem;
+  flex-grow: 1;
+}
+.typed {
+  color: #c770f0;
+  transform: translateX(30%);
+  /* font-weight: 800; */
+}
+.imageContainer img {
+  padding-top: 12rem;
+  padding-right: 8rem;
+  width: 40rem;
+}

@@ -1,0 +1,38 @@
+.skills {
+  color: #c770f0;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 2rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-top: 9rem;
+}
+.container {
+  text-align: left;
+  display: inline-flex;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  border: 2px solid #c770f0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 18px #c770f0;
+}
+.container:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 7px 7px 18px #c770f0;
+}
+
+.container p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.skills img {
+  height: 10rem;
+  padding: 1rem 0 2rem 3rem;
+}
+.skills img:first-of-type {
+  margin-left: 5rem;
+}
