@@ -6,7 +6,8 @@
   gap: 2rem;
   flex-grow: 1;
   flex-shrink: 1;
-  padding-top: 9rem;
+  padding-top: 15rem;
+  overflow: hidden;
 }
 .container {
   text-align: left;

@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Main.module.css";
 
 import Home from "../Home/Home";
 import Skills from "../Skills/Skills";
 import Certs from "../Certs/Certs";
-export default function Main() {
-  const [shown, setShown] = useState("Certs");
+import About from "../About/About";
+
+export default function Main(props) {
   return (
     <div className={styles.main}>
-      {shown === "Home" && <Home />}
-      {shown === "Skills" && <Skills />}
-      {shown === "Certs" && <Certs />}
+      {props.shown === "Home" && <Home />}
+      {props.shown === "Skills" && <Skills />}
+      {props.shown === "Certs" && <Certs />}
+      {props.shown === "About" && <About />}
     </div>
   );
 }

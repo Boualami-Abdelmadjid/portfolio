@@ -1,0 +1,31 @@
+.about {
+  padding-top: 15rem;
+  overflow: hidden;
+}
+.about p {
+  font-size: 1.6rem;
+  color: whitesmoke;
+  text-align: left;
+  margin: 0 5rem 2rem 5rem;
+  line-height: 3.2rem;
+}
+#greet {
+  color: #c770f0;
+}
+
+.about a {
+  color: #c770f0;
+  text-decoration: none;
+  display: inline-block;
+}
+.about a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #c770f0;
+  transition: width 0.3s ease-in-out;
+}
+.about a:hover::after {
+  width: 100%;
+}
