@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  overflow-y: auto;
   justify-content: space-between;
 }
 .typing {
@@ -10,18 +10,18 @@
   margin-left: 3rem;
   color: #fefefe;
   width: 30rem;
-  padding-top: 20rem;
+  padding-top: 30vh;
   flex-grow: 1;
 }
 .typed {
   color: #c770f0;
   transform: translateX(30%);
-  /* font-weight: 800; */
 }
 .imageContainer img {
-  padding-top: 12rem;
-  padding-right: 8rem;
-  width: 40rem;
+  display: block;
+  padding-top: 20vh;
+  padding-right: 6vw;
+  width: 40vw;
 }
 @media screen and (max-width: 1200px) {
   .imageContainer img {

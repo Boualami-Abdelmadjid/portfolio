@@ -3,5 +3,5 @@
   background-image: url("sky.jpg");
   background-size: cover;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
 }

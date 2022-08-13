@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Skills.module.css";
-import htmlCss from "./img/htmlCss.png";
+import html from "./img/html.png";
+import css from "./img/css.png";
 import js from "./img/js.png";
 import reactLogo from "./img/react.png";
 import python from "./img/python.png";
 import django from "./img/django.png";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Skills() {
@@ -18,7 +20,8 @@ export default function Skills() {
       >
         <div className={`${styles.frontend} + ${styles.container}`}>
           <p>Frontend</p>
-          <img id="html" src={htmlCss} alt="html and css" />
+          <img id="html" src={html} alt="html" />
+          <img id="css" src={css} alt="css" />
           <img id="js" src={js} alt="javascript" />
           <img src={reactLogo} alt="react" />
         </div>

@@ -1,6 +1,6 @@
 .about {
   padding-top: 15rem;
-  overflow: hidden;
+  overflow: auto;
 }
 .about p {
   font-size: 1.6rem;

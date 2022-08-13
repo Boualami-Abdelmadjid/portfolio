@@ -6,12 +6,14 @@ nav {
   position: fixed;
   top: 0rem;
   right: 2rem;
+  display: block;
 }
 nav ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+  margin: 0;
 }
 nav li {
   display: inline;

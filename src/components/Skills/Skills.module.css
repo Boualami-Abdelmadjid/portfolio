@@ -5,8 +5,13 @@
   grid-template-columns: max-content;
   grid-template-rows: auto auto;
   gap: 2rem;
-  padding-top: 15rem;
-  overflow: hidden;
+  padding-top: 20vh;
+  overflow: auto;
+  justify-content: space-around;
+}
+.backend {
+  display: grid;
+  justify-content: start;
 }
 .container {
   text-align: left;
@@ -18,7 +23,6 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 18px #c770f0;
-  justify-content: start;
 }
 .container:hover {
   transform: scale(1.02) translateY(-5px);
@@ -26,12 +30,13 @@
 }
 
 .container p {
+  text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 .skills img {
-  height: 10rem;
+  height: 10vw;
   padding: 1rem 0 2rem 3rem;
   grid-row: 2;
 }

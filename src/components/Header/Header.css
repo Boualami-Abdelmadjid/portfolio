@@ -1,15 +1,21 @@
 header {
   opacity: 0.8;
-  height: 4rem;
-  position: absolute;
+  height: 2rem;
+  position: fixed;
   z-index: 5;
   color: #c770f0;
-  margin: 2rem;
+  padding: 0.8rem;
+  width: 100%;
   font-size: 1.4rem;
   font-weight: 500;
   cursor: pointer;
+  background-color: rgba(145, 141, 141, 0.39);
 }
-header::after {
+header p {
+  margin: 0.4rem;
+  width: max-content;
+}
+header p::after {
   content: "";
   display: block;
   width: 0;
@@ -17,7 +23,7 @@ header::after {
   background-color: #c770f0;
   transition: width 0.3s ease-in-out;
 }
-header:hover::after {
+header p:hover::after {
   width: 100%;
 }
 
