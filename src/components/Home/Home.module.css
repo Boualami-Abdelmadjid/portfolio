@@ -23,3 +23,15 @@
   padding-right: 8rem;
   width: 40rem;
 }
+@media screen and (max-width: 1200px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .imageContainer img {
+    padding-top: 4rem;
+    padding-right: 20rem;
+    width: 30rem;
+  }
+}
