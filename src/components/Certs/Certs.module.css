@@ -54,3 +54,29 @@
 .container a:hover::after {
   width: 100%;
 }
+#swipe {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-top: 10rem;
+    overflow: scroll;
+  }
+  .container p {
+    text-align: justify;
+  }
+  .innerCerts img {
+    width: 25.33rem;
+    height: 17.33rem;
+  }
+  .Certs {
+    height: 19.5rem;
+  }
+  #swipe {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

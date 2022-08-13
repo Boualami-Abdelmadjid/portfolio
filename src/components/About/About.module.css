@@ -29,3 +29,16 @@
 .about a:hover::after {
   width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+  .about {
+    padding-top: 12rem;
+    overflow: scroll;
+  }
+  .about p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0 2rem 2rem 3rem;
+    line-height: 2rem;
+  }
+}

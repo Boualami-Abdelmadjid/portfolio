@@ -27,4 +27,9 @@
   .imageContainer img {
     display: none;
   }
+  .typing {
+    padding-top: 15rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
 }

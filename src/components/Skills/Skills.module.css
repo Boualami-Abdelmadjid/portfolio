@@ -3,15 +3,14 @@
   opacity: 0.8;
   display: grid;
   grid-template-columns: max-content;
+  grid-template-rows: auto auto;
   gap: 2rem;
-  flex-grow: 1;
-  flex-shrink: 1;
   padding-top: 15rem;
   overflow: hidden;
 }
 .container {
   text-align: left;
-  display: inline-flex;
+  display: grid;
   margin-left: 2rem;
   font-size: 1.4rem;
   border: 2px solid #c770f0;
@@ -19,6 +18,7 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 18px #c770f0;
+  justify-content: start;
 }
 .container:hover {
   transform: scale(1.02) translateY(-5px);
@@ -33,7 +33,18 @@
 .skills img {
   height: 10rem;
   padding: 1rem 0 2rem 3rem;
+  grid-row: 2;
 }
 .skills img:first-of-type {
-  margin-left: 5rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .skills img {
+    height: 5rem;
+    padding: 0 0 2rem 1rem;
+  }
+  .skills {
+    padding-top: 12rem;
+  }
 }
