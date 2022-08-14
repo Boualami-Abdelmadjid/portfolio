@@ -20,15 +20,36 @@ export default function Skills() {
       >
         <div className={`${styles.frontend} + ${styles.container}`}>
           <p>Frontend</p>
-          <img id="html" src={html} alt="html" />
-          <img id="css" src={css} alt="css" />
-          <img id="js" src={js} alt="javascript" />
-          <img src={reactLogo} alt="react" />
+          <div className={styles.skill}>
+            <p>HTML</p>
+            <img id="html" src={html} alt="html" />
+          </div>
+          <div className={styles.skill}>
+            <p>CSS</p>
+            <img id="css" src={css} alt="css" />
+          </div>
+
+          <div className={styles.skill}>
+            <p>JS</p>
+            <img id="js" src={js} alt="javascript" />
+          </div>
+
+          <div className={styles.skill}>
+            <p>React.js</p>
+            <img src={reactLogo} alt="react" />
+          </div>
         </div>
         <div className={`${styles.backend} + ${styles.container}`}>
           <p>Backend</p>
-          <img src={python} alt="python" />
-          <img src={django} alt="django" />
+          <div className={styles.skill}>
+            <p>Python</p>
+            <img src={python} alt="python" />
+          </div>
+
+          <div className={styles.skill}>
+            <p>Django</p>
+            <img src={django} alt="django" />
+          </div>
         </div>
       </motion.div>
     </AnimatePresence>

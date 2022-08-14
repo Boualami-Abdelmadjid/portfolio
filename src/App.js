@@ -7,6 +7,7 @@ import Main from "./components/Main/Main";
 function App() {
   const [shown, setShown] = useState("Home");
   const stateHandler = (state) => {
+    document.title = state;
     setShown(state);
   };
   return (

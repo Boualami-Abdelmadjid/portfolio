@@ -2,12 +2,13 @@
   color: #c770f0;
   opacity: 0.8;
   display: grid;
-  grid-template-columns: max-content;
+  /* grid-template-columns: max-content; */
   grid-template-rows: auto auto;
-  gap: 2rem;
+  gap: 4vw;
   padding-top: 20vh;
   overflow: auto;
   justify-content: space-around;
+  margin-inline: auto;
 }
 .backend {
   display: grid;
@@ -15,14 +16,17 @@
 }
 .container {
   text-align: left;
+  column-gap: 4vw;
   display: grid;
-  margin-left: 2rem;
-  font-size: 1.4rem;
+  grid-auto-flow: column;
+  /* font-size: 1.4rem; */
   border: 2px solid #c770f0;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 18px #c770f0;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
 }
 .container:hover {
   transform: scale(1.02) translateY(-5px);
@@ -36,20 +40,24 @@
 }
 
 .skills img {
-  height: 10vw;
-  padding: 1rem 0 2rem 3rem;
-  grid-row: 2;
+  width: 9vw;
 }
-.skills img:first-of-type {
-  margin-left: 1rem;
+
+.skill {
+  grid-row: 2;
+  text-align: center;
+}
+
+.skill p {
+  margin: 0.2rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
-  .skills img {
-    height: 5rem;
-    padding: 0 0 2rem 1rem;
-  }
   .skills {
     padding-top: 12rem;
+  }
+  .skills img {
+    margin: 0 auto 0 0;
   }
 }
