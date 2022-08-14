@@ -12,7 +12,6 @@ function App() {
   };
   return (
     <div className="App">
-      <Header />
       <Nav onStateChange={stateHandler} />
       <Main shown={shown} />
     </div>

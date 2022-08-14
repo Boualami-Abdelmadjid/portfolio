@@ -1,6 +1,7 @@
 .container {
-  padding-top: 15rem;
+  padding-top: 20vh;
   overflow: auto;
+  margin-inline: 2vw;
 }
 .Certs {
   margin: 1rem;

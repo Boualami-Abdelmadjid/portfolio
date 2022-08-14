@@ -48,7 +48,7 @@ export default function Certs() {
             })}
           </motion.div>
         </motion.div>
-        <p id={styles.swipe}>swipe ➡ </p>
+        <p id={styles.swipe}>Swipe ➡ </p>
       </motion.div>
     </AnimatePresence>
   );

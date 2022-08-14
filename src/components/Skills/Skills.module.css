@@ -56,6 +56,8 @@
 @media screen and (max-width: 1200px) {
   .skills {
     padding-top: 12rem;
+    margin-inline-start: 4rem;
+    margin-inline-end: 1rem;
   }
   .skills img {
     margin: 0 auto 0 0;

@@ -1,5 +1,5 @@
 .about {
-  padding-top: 15rem;
+  padding-top: 10rem;
   overflow: auto;
 }
 .about p {
@@ -34,11 +34,13 @@
   .about {
     padding-top: 12rem;
     overflow: scroll;
+    margin-inline-start: 4rem;
+    margin-inline-end: 1rem;
   }
   .about p {
     font-size: 1.2rem;
     text-align: justify;
-    margin: 0 2rem 2rem 3rem;
+    margin: 0;
     line-height: 2rem;
   }
 }

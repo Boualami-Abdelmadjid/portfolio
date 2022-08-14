@@ -7,7 +7,7 @@
 .typing {
   font-size: 3rem;
   text-align: left;
-  margin-left: 3rem;
+  margin-left: 10vw;
   color: #fefefe;
   width: 30rem;
   padding-top: 30vh;
@@ -30,6 +30,6 @@
   .typing {
     padding-top: 15rem;
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 20vw;
   }
 }
