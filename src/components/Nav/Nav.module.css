@@ -44,6 +44,10 @@ nav ion-icon {
   text-align: right;
   justify-content: end;
 }
+
+.navToggle {
+  width: 100%;
+}
 #menu {
   margin-bottom: 15vh;
   position: relative;
