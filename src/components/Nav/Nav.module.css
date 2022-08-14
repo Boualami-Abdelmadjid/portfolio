@@ -76,3 +76,11 @@ nav ion-icon {
     height: 90%;
   }
 }
+
+li a {
+  text-decoration: none;
+}
+li a:hover,
+li a:visited {
+  color: #cec8c4;
+}

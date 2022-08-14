@@ -6,6 +6,8 @@ export default function Nav(props) {
   const toggleNavHandler = () => {
     setNavShown((prev) => !prev);
   };
+  const linkedInHandler = () =>
+    window.open("https://www.linkedin.com/in/abdelmadjid-boualami/", "_blank");
   return (
     <nav className={navShown ? "" : styles.navHidden}>
       <ul>
@@ -54,8 +56,14 @@ export default function Nav(props) {
         >
           <ion-icon name="information-circle-outline" /> <span>About</span>
         </li>
-        <li className={styles.navButton} id={styles.linkedIn}>
-          <ion-icon name="logo-linkedin" /> <span>LinkedIn</span>
+        <li
+          className={styles.navButton}
+          id={styles.linkedIn}
+          onClick={linkedInHandler}
+        >
+          <ion-icon name="logo-linkedin" />
+
+          <span>LinkedIn</span>
         </li>
       </ul>
     </nav>
