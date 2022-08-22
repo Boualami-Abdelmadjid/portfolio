@@ -12,9 +12,9 @@ export default function Main(props) {
     <div className={styles.main}>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="certs" element={<Certs />} />
-        <Route path="about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/certs" element={<Certs />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
