@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Nav.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Nav(props) {
   const [navShown, setNavShown] = useState(false);
@@ -20,44 +21,29 @@ export default function Nav(props) {
         >
           <ion-icon id={styles.menu} name="menu-outline" />
         </li>
-        <li
-          className={styles.navButton}
-          onClick={() => {
-            setNavShown(false);
-            props.onStateChange("Home");
-          }}
-        >
-          {" "}
-          <ion-icon name="home-outline" /> <span>Home</span>
+        <li className={styles.navButton} onClick={toggleNavHandler}>
+          <NavLink to="/">
+            <ion-icon name="home-outline" />{" "}
+            <span className={styles.span}> Home</span>
+          </NavLink>
         </li>
-        <li
-          className={styles.navButton}
-          onClick={() => {
-            props.onStateChange("Skills");
-            setNavShown(false);
-          }}
-        >
-          {" "}
-          <ion-icon name="code-outline" /> <span>Skills</span>
+        <li className={styles.navButton} onClick={toggleNavHandler}>
+          <NavLink to="skills">
+            <ion-icon name="code-outline" />{" "}
+            <span className={styles.span}>Skills</span>
+          </NavLink>
         </li>
-        <li
-          className={styles.navButton}
-          onClick={() => {
-            props.onStateChange("Certs");
-            setNavShown(false);
-          }}
-        >
-          {" "}
-          <ion-icon name="document-outline" /> <span>Certs</span>
+        <li className={styles.navButton} onClick={toggleNavHandler}>
+          <NavLink to="certs">
+            <ion-icon name="document-outline" />{" "}
+            <span className={styles.span}>Certs</span>
+          </NavLink>
         </li>
-        <li
-          className={styles.navButton}
-          onClick={() => {
-            props.onStateChange("About");
-            setNavShown(false);
-          }}
-        >
-          <ion-icon name="information-circle-outline" /> <span>About</span>
+        <li className={styles.navButton} onClick={toggleNavHandler}>
+          <NavLink to="about">
+            <ion-icon name="information-circle-outline" />{" "}
+            <span className={styles.span}>About</span>
+          </NavLink>
         </li>
         <li
           className={styles.navButton}

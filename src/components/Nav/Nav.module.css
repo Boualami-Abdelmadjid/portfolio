@@ -21,17 +21,25 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding-inline: 1rem;
+  padding-inline: 0.8rem 1rem;
   height: 95%;
 }
 nav li {
   display: inline;
   margin-block: 0.5rem;
   cursor: pointer;
-  width: fit-content;
+  width: max-content;
   display: inline-flex;
   gap: 1rem;
   opacity: 0.8;
+  overflow: hidden;
+}
+.span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+nav li:first-of-type ion-icon:first-of-type {
+  transform: scale(1.2);
 }
 nav li:hover {
   opacity: 1;
@@ -51,6 +59,7 @@ nav ion-icon {
   margin: 0;
 }
 #menu {
+  margin-top: 1.5rem;
   padding-bottom: 15vh;
   position: relative;
 }

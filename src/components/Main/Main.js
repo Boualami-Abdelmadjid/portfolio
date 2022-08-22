@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import styles from "./Main.module.css";
 
 import Home from "../Home/Home";
@@ -9,10 +10,12 @@ import About from "../About/About";
 export default function Main(props) {
   return (
     <div className={styles.main}>
-      {props.shown === "Home" && <Home />}
-      {props.shown === "Skills" && <Skills />}
-      {props.shown === "Certs" && <Certs />}
-      {props.shown === "About" && <About />}
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="certs" element={<Certs />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 }
