@@ -7,6 +7,7 @@ export default function Nav(props) {
   const toggleNavHandler = () => {
     setNavShown((prev) => !prev);
   };
+  const closeNav = () => setNavShown(false);
   const linkedInHandler = () =>
     window.open("https://www.linkedin.com/in/abdelmadjid-boualami/", "_blank");
   return (
@@ -21,25 +22,25 @@ export default function Nav(props) {
         >
           <ion-icon id={styles.menu} name="menu-outline" />
         </li>
-        <li className={styles.navButton} onClick={toggleNavHandler}>
+        <li className={styles.navButton} onClick={closeNav}>
           <NavLink to="/">
             <ion-icon name="home-outline" />{" "}
             <span className={styles.span}> Home</span>
           </NavLink>
         </li>
-        <li className={styles.navButton} onClick={toggleNavHandler}>
+        <li className={styles.navButton} onClick={closeNav}>
           <NavLink to="skills">
             <ion-icon name="code-outline" />{" "}
             <span className={styles.span}>Skills</span>
           </NavLink>
         </li>
-        <li className={styles.navButton} onClick={toggleNavHandler}>
+        <li className={styles.navButton} onClick={closeNav}>
           <NavLink to="certs">
             <ion-icon name="document-outline" />{" "}
             <span className={styles.span}>Certs</span>
           </NavLink>
         </li>
-        <li className={styles.navButton} onClick={toggleNavHandler}>
+        <li className={styles.navButton} onClick={closeNav}>
           <NavLink to="about">
             <ion-icon name="information-circle-outline" />{" "}
             <span className={styles.span}>About</span>
