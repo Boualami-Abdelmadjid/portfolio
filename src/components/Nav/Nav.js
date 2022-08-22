@@ -9,13 +9,16 @@ export default function Nav(props) {
   const linkedInHandler = () =>
     window.open("https://www.linkedin.com/in/abdelmadjid-boualami/", "_blank");
   return (
-    <nav className={navShown ? "" : styles.navHidden}>
+    <nav
+      // className={navShown ? "" : styles.navHidden}
+      style={{ width: `${!navShown ? "3rem" : "fit-content"}` }}
+    >
       <ul>
         <li
           className={`${styles.navButton} ${styles.navToggle}`}
           onClick={toggleNavHandler}
         >
-          <ion-icon id={styles.menu} name="menu-outline" size="large" />
+          <ion-icon id={styles.menu} name="menu-outline" />
         </li>
         <li
           className={styles.navButton}

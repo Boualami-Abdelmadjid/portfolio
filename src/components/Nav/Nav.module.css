@@ -14,6 +14,7 @@ nav {
   );
   height: 100vh;
   overflow: hidden;
+  transition: width 0.3s ease-in-out;
 }
 nav ul {
   list-style: none;
@@ -47,9 +48,10 @@ nav ion-icon {
 
 .navToggle {
   width: 100%;
+  margin: 0;
 }
 #menu {
-  margin-bottom: 15vh;
+  padding-bottom: 15vh;
   position: relative;
 }
 
@@ -57,10 +59,10 @@ nav ion-icon {
   margin-top: auto;
 }
 
-.navHidden {
+/* .navHidden {
   width: 3rem;
   transition: width 0.5s ease-in-out;
-}
+} */
 .navHidden ul {
   padding: 0;
 }
