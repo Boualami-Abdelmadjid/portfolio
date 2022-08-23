@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Nav.module.css";
 import { NavLink } from "react-router-dom";
 
-export default function Nav(props) {
+export default function Nav() {
   const [navShown, setNavShown] = useState(false);
   const toggleNavHandler = () => {
     setNavShown((prev) => !prev);
@@ -10,6 +10,12 @@ export default function Nav(props) {
   const closeNav = () => setNavShown(false);
   const linkedInHandler = () =>
     window.open("https://www.linkedin.com/in/abdelmadjid-boualami/", "_blank");
+  let activeStyle = {
+    width: "150% ",
+    backgroundColor: "grey",
+    marginLeft: "-5rem",
+    paddingInline: "5rem",
+  };
   return (
     <nav
       // className={navShown ? "" : styles.navHidden}
@@ -23,25 +29,37 @@ export default function Nav(props) {
           <ion-icon id={styles.menu} name="menu-outline" />
         </li>
         <li className={styles.navButton} onClick={closeNav}>
-          <NavLink to="/">
+          <NavLink
+            to="/"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             <ion-icon name="home-outline" />{" "}
             <span className={styles.span}> Home</span>
           </NavLink>
         </li>
         <li className={styles.navButton} onClick={closeNav}>
-          <NavLink to="skills">
+          <NavLink
+            to="skills"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             <ion-icon name="code-outline" />{" "}
             <span className={styles.span}>Skills</span>
           </NavLink>
         </li>
         <li className={styles.navButton} onClick={closeNav}>
-          <NavLink to="certs">
+          <NavLink
+            to="certs"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             <ion-icon name="document-outline" />{" "}
             <span className={styles.span}>Certs</span>
           </NavLink>
         </li>
         <li className={styles.navButton} onClick={closeNav}>
-          <NavLink to="about">
+          <NavLink
+            to="about"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             <ion-icon name="information-circle-outline" />{" "}
             <span className={styles.span}>About</span>
           </NavLink>

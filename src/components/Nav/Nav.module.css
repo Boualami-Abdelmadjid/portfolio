@@ -23,6 +23,7 @@ nav ul {
   flex-direction: column;
   padding-inline: 0.8rem 1rem;
   height: 95%;
+  overflow: visible;
 }
 nav li {
   display: inline;
@@ -32,7 +33,9 @@ nav li {
   display: inline-flex;
   gap: 1rem;
   opacity: 0.8;
-  overflow: hidden;
+  overflow: visible;
+  padding-block: 0.5rem;
+  margin-block: 0;
 }
 .span {
   display: inline-block;
@@ -95,6 +98,7 @@ nav ion-icon {
 li a {
   text-decoration: none;
   color: inherit;
+  padding-block: 0.35rem;
 }
 li a:hover,
 li a:visited {
