@@ -94,6 +94,7 @@ nav ion-icon {
 
 li a {
   text-decoration: none;
+  color: inherit;
 }
 li a:hover,
 li a:visited {
