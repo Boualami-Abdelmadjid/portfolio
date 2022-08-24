@@ -1,0 +1,14 @@
+.preloader--container {
+  background-color: black;
+  position: absolute;
+  z-index: 5000;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+.preloader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

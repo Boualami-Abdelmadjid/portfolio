@@ -10,7 +10,7 @@ import image9 from "./Assets/JrPenTester.jpg";
 import image10 from "./Assets/Web Fundamentals.jpg";
 import image11 from "./Assets/Pentest+.jpg";
 
-export default [
+const images = [
   image1,
   image2,
   image3,
@@ -23,3 +23,4 @@ export default [
   image10,
   image11,
 ];
+export default images;

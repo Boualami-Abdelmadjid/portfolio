@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Nav from "./components/Nav/Nav";
 import Main from "./components/Main/Main";
-import spinner from "./spinner.gif";
+import Preloader from "./components/preloader/Preloader";
 
 function App() {
   const [shown, setShown] = useState("Home");
@@ -25,9 +25,7 @@ function App() {
   };
   return (
     <div className="App">
-      <div className={`preloader ${loaded ? "hidden" : ""}`}>
-        <img src={spinner} alt="" />
-      </div>
+      {!loaded && <Preloader />}
       <Nav onStateChange={stateHandler} />
       <Main shown={shown} />
     </div>

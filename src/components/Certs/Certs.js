@@ -27,6 +27,7 @@ export default function Certs() {
           <a
             href="https://www.credly.com/users/abdelmadjid-boualami"
             target="_blank"
+            rel="noreferrer"
           >
             here
           </a>
@@ -42,7 +43,7 @@ export default function Certs() {
             {images.map((image) => {
               return (
                 <motion.div key={image}>
-                  <img src={image} />
+                  <img src={image} alt={image} />
                 </motion.div>
               );
             })}
