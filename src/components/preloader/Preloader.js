@@ -1,19 +1,14 @@
 import React from "react";
-import { BallTriangle } from "react-loader-spinner";
+import Nav from "../Nav/Nav";
 import styles from "./Preloader.module.css";
+import gif from "./loading.svg";
 
 export default function Preloader() {
   return (
     <div className={styles["preloader--container"]}>
+      <Nav />
       <div className={styles["preloader"]}>
-        <BallTriangle
-          height={100}
-          width={100}
-          radius={5}
-          color="#4fa94d"
-          ariaLabel="ball-triangle-loading"
-          visible={true}
-        />
+        <img src={gif} alt="preloader" />
       </div>
     </div>
   );
