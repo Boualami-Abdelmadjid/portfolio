@@ -12,15 +12,18 @@ export default function About() {
         exit={{ x: "100vw" }}
       >
         <p>
-          Hello again! 👋 <br /> <br />
+          <span className={styles.hi}>
+            Hi again! <span className="waving">👋</span>
+          </span>{" "}
           I'm glad that you want to know more about me, I'm{" "}
           <span id={styles.greet}> Boualami Abdelmadjid</span> , network
           engenieering graduate from Djilali Liabes University, Sidi Bel Abbes.{" "}
           <br /> <br />
-          I'm a junior web developer with cyber-security background, I'm based
-          in Sidi Bel Abbes, Algeria and available if any opportunity presented
-          itself. <br /> <br />
-          My mail address is:{" "}
+          I'm a junior web developer with cyber-security background, working for
+          <span id={styles.greet}> Sfizer Global Solutions </span> since
+          september 2022.
+          <br /> <br />
+          I'm based in Sidi Bel Abbes, Algeria and my mail address is:{" "}
           <a type="mail" href="mailto:majidaveiro@gmail.com">
             majidaveiro@gmail.com
           </a>

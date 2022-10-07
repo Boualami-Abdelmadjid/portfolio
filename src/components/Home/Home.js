@@ -14,7 +14,9 @@ export default function Home() {
         exit={{ x: "100vw" }}
       >
         <div className={styles.typing}>
-          <p>Hi There! 👋 </p>
+          <p>
+            Hi There! <span className="waving">👋</span>{" "}
+          </p>
           <span>I'm </span>
           <Typed
             className={styles.typed}

@@ -63,3 +63,22 @@ ion-icon {
 .hidden {
   display: none;
 }
+
+.waving {
+  animation-name: waving;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  display: inline-block;
+  transform: rotate(20deg);
+}
+@keyframes waving {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+}
