@@ -56,7 +56,9 @@ html {
   }
 }
 
-
+ion-icon {
+  pointer-events: none;
+}
 
 .hidden {
   display: none;

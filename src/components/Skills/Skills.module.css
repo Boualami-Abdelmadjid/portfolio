@@ -37,6 +37,7 @@
   text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
+  color: rgb(252, 252, 252);
 }
 
 .skills img {
@@ -47,11 +48,17 @@
 .skill {
   grid-row: 2;
   text-align: center;
+  transition: all 0.3s;
+}
+.skill:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .skill p {
   margin: 0.2rem;
   text-align: center;
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 1200px) {
